@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #ECF9FF;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.section-header {
+    font-size: 2.4rem;
+    margin: 2rem;
+}
+
+.section-header, footer {
+    text-align: center;
+    color: black;
+}
+
+.grid-cards-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    max-width: min-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin: 2rem 0 10rem 0;
+}
+
+.grid-card {
+    width: 45rem;
+    background: linear-gradient(#EF8D9C, #FEC09D);
+    border-radius: 1rem;
+}
+
+.card-img img {
+    height: 26rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-content {
+    width: 100%;
+    padding: 2rem;
+}
+
+.card-heading {
+    margin: 1rem 0;
+}
+
+.card-description {
+    height: 10rem;
+    margin-bottom: 5rem;
+}
+
+.card-btn {
+    width: 100%;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    border-radius: 0.4rem;
+    color: white;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+footer {
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(#EF8D9C, #FEC09D);
+}
+
+@media (max-width: 1488px) {
+    .grid-container {
+        max-width: min-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        margin: 2rem 0 10rem 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .grid-container {
+        max-width: min-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        margin: 2rem 0 10rem 0;
+    }
+
+    .grid-card {
+        width: 35rem;
+        background: linear-gradient(#EF8D9C, #FEC09D);
+        border-radius: 1rem;
+    }
+
+    .card-description {
+        height: 10rem;
+        margin-bottom: 8.5rem;
+    }
+}
